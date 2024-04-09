@@ -21,13 +21,15 @@
 	--header-height: 60px;
 
 	/* Colores */
-	--primary-color: light-dark(#111, #ffffffcc);
+	
+	--bg-color-section-skills: light-dark(#eefb54, #111);
+	--primary-color: light-dark(#dad305, #ffffffcc);
 	--primary-color2: light-dark(#ffffffcc, #111);
-	/*--bg-color-section1: light-dark(#eee, #111);*/
-	--bg-color-section1: light-dark(#D0D3D4, #111);
-	--bg-color-section2: light-dark(#eff4f6, #6a6a6a);
-	/*--bg-color-section2: light-dark(#fafafa, #6a6a6a);*/
-	--bg-color-buttons: light-dark(#5f7c84, #6a6a6a);
+	--bg-color-section-skills: light-dark(#62615c, #111);
+	--bg-color-section1: light-dark(#e6dfdb, #111);
+	--bg-color-section-home: light-dark(#d44807, #111);
+	--bg-color-section2: light-dark(#5579b3, #6a6a6a);
+	--bg-color-buttons: light-dark(#5579b3, #6a6a6a);
 	--bg-color-section3: light-dark(#D0D3D4, #111);
 
 	/* Typografia */
@@ -82,7 +84,11 @@ html {
 		color-scheme: light;
 	}
 }
-
+.logo {
+	width: 60px;
+	height: 60px;
+	padding:5px;	
+}
 /* ============= REUSABLE CLASSES ============= */
 .section {
 	padding: 4rem 0;
@@ -331,8 +337,9 @@ html {
 }
 /* ============= Home ============= */
 .home {
-	/*background-image: url(../img/fondo-grunge-espacio-texto-o-imagen_196038-2978.avif);*/
-	/*background-color: var(--bg-color-section1);*/	
+	background-image: url(../img/astro3.jpeg);
+	/* background-color: var(--bg-color-section-home);	 */
+	
 	position: relative;
 	overflow: hidden;
 
@@ -401,7 +408,7 @@ html {
 		position: relative;
 		row-gap: 2rem;
 		padding: var(--header-height) 0 3rem;
-		background-image: url(../img/fondo-grunge-espacio-texto-o-imagen_196038-2978.avif);
+		background-image: url(../img/vector5.jpg);
 		background-repeat: no-repeat;
 		background-size: 130%, 120%;
 		.home__image {
@@ -437,10 +444,11 @@ html {
 				margin: 0 auto;
 				margin-bottom: var(--mr-2);
 				text-transform: uppercase;
+				-webkit-text-stroke: 2px black;
 				border-right: 4px solid;
 				white-space: nowrap;
 				width: 15ch;
-				animation: typing 2s infinite steps(15) alternate,
+				animation: typing 3s infinite steps(15) alternate,
 					blink 0.3s infinite step-end alternate;
 				overflow: hidden;
 			}
@@ -495,7 +503,10 @@ html {
 
 /* ============= skills ============= */
 .skills {
-	background-color: var(--bg-color-section);
+	background-color: var(--bg-color-section-skills);
+	-webkit-text-stroke: 0.2px black;
+	
+	
 	.skills__container {
 		.skills__description {
 			text-align: center;

@@ -25,6 +25,7 @@
 	--bg-color-section-skills: light-dark(#eefb54, #111);
 	--primary-color: light-dark(#dad305, #ffffffcc);
 	--primary-color2: light-dark(#ffffffcc, #111);
+	--primary-color3: light-dark(#ffffffcc, white);
 	--bg-color-section-skills: light-dark(#62615c, #111);
 	--bg-color-section1: light-dark(#e6dfdb, #111);
 	--bg-color-section-home: light-dark(#d44807, #111);
@@ -331,13 +332,12 @@ html {
 .bl {
 	background-color: #050505;
 	color: white;
-	padding: 0rem 1rem;
-	
-	
+	padding: 0rem 1rem;	
 }
 /* ============= Home ============= */
 .home {
 	background-image: url(../img/astro3.jpeg);
+	
 	/* background-color: var(--bg-color-section-home);	 */
 	
 	position: relative;
@@ -347,6 +347,7 @@ html {
 		position: absolute;
 		font-size: 70px;
 		color: var(--primary-color);
+		animation: spin 4s linear infinite;
 	}
 
 	.home__layer--1 {
@@ -437,7 +438,9 @@ html {
 				text-align: center;
 			}
 			.home__description {
-			
+				color: var(--primary-color3);
+				-webkit-text-stroke: 1px #e1e082;
+				letter-spacing: 3px;
 				text-align: center;
 			}
 			.home__title {
@@ -453,7 +456,7 @@ html {
 				overflow: hidden;
 			}
 			.home-img {
-				margin: 0 auto;
+				margin: 0 auto;								
 			}
 		}
 		.home__buttons {

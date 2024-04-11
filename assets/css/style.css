@@ -282,83 +282,83 @@ html {
 				.navbar__toggle--darkmode-input {
 					visibility: hidden;
 
-						&:checked + label {
-							background: #4a4a48;
+					&:checked + label {
+						background: #4a4a48;
 						
-							&::after {
+						&::after {
 								left: 40px;
 								transform: translateX(-100%);
 								background: linear-gradient(180deg, #777, #3a3a3a);
-							}
+						}
 
-							.bx-sun {
+						.bx-sun {
 								color: #7e7e7e;
-							}
+						}
 
-							.bx-moon {
+						.bx-moon {
 							color: var(--bg-color-section2);
-							}
 						}
 					}
 				}
-			/* language toggle */
-				.navbar__toggle--language {
-					.navbar__toggle--language-label {
-						width: 42px;
-						height: 20px;
-						position: relative;
-						display: block;
-						background: #ebebeb;
-						border-radius: 20px;
-						box-shadow: inset 0px 2px 5px #00000066, inset 0px -2px 5px #ffffff66;
-						cursor: pointer;
-						transition: 0.3s;
+			}
+				/* language toggle */
+			.navbar__toggle--language {
+				.navbar__toggle--language-label {
+					width: 42px;
+					height: 20px;
+					position: relative;
+					display: block;
+					background: #ebebeb;
+					border-radius: 20px;
+					box-shadow: inset 0px 2px 5px #00000066, inset 0px -2px 5px #ffffff66;
+					cursor: pointer;
+					transition: 0.3s;
 
-						&::after {
-							content: '';
-							width: 16px;
-							height: 16px;
-							position: absolute;
-							top: 2px;
-							left: 2px;
-							background-image: url(../img/colombia.png);
-							background-size: cover;
-							background-repeat: no-repeat;
-							border-radius: 50%;
-							box-shadow: 0px 5px 10px #00000033;
-							transition: 0.3s;
-						}
+					&::after {
+						content: '';
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						top: 2px;
+						left: 2px;
+						background-image: url(../img/colombia.png);
+						background-size: cover;
+						background-repeat: no-repeat;
+						border-radius: 50%;
+						box-shadow: 0px 5px 10px #00000033;
+						transition: 0.3s;
 					}
+				}
 
 					.navbar__toggle--language-input {
 						visibility: hidden;
 
 						&:checked + label {
 							&::after {
-								left: 40px;
-								transform: translateX(-100%);
-								background-image: url(../img/reino-unido.png);
+							left: 40px;
+							transform: translateX(-100%);
+							background-image: url(../img/reino-unido.png);
 							}
 						}
 					}
-				}
 			}
 		}
 	}
-	.btn__open,
-	.btn__close,
-	.navbar__logo i {
-		font-size: 2.2rem;
-		color: var(--primary-color);
-		transition: background 0.3s;
-	}
-	.btn__open {
-		&:hover {
-			background-color: #dfdfdf;
+	
+		.btn__open,
+		.btn__close,
+		.navbar__logo i {
+			font-size: 2.2rem;
+			color: var(--primary-color);
+			transition: background 0.3s;
 		}
-	}
+		.btn__open {
+			&:hover {
+				background-color: #dfdfdf;
+			}
+		}
 
-
+}
 @keyframes animation-bar {
 	to {
 		background-color: var(--bg-color-section2);

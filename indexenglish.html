@@ -30,15 +30,7 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<script type="module" src="assets/js/main.js"></script>
 		<script type="text/javascript" src ="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-		<script>
-			function changeLanguage(language) {
-				if (language === 'es') {
-					window.location.href = 'index.html';
-				} else if (language === 'en') {
-					window.location.href = 'indexenglish.html';
-				}
-			}
-		</script>
+
 		<script type="text/javascript">
 			(function () {
 				emailjs.init({
@@ -97,15 +89,12 @@
 							type="checkbox"
 							id="language-toggle"
 							class="navbar__toggle--language-input"
-						
-						<button onclick="changeLanguage('es')" id="language-toggle"
-						class="navbar__toggle--language-input">Inglés</button>
+						/> 
 						<label
 							for="language-toggle"
 							class="navbar__toggle--language-label"
 						></label>
-					</div>							
-					<!-- <button onclick="changeLanguage('es')" class="btn btn--primary  bl">Language: Español</button> -->
+					</div>												
 				</div>
 				<a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
 				</nav>

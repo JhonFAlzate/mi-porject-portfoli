@@ -16,6 +16,6 @@ updateCopyright();
 
 sendEmail();
 
-changeLanguage();
+// changeLanguage();
 
 setThemeOnLoad();

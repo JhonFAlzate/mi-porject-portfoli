@@ -301,10 +301,47 @@ html {
 						}
 					}
 				}
-				
+			/* language toggle */
+				.navbar__toggle--language {
+					.navbar__toggle--language-label {
+						width: 42px;
+						height: 20px;
+						position: relative;
+						display: block;
+						background: #ebebeb;
+						border-radius: 20px;
+						box-shadow: inset 0px 2px 5px #00000066, inset 0px -2px 5px #ffffff66;
+						cursor: pointer;
+						transition: 0.3s;
 
-			/* language toggle  Boton de cambio de idioma*/
-			
+						&::after {
+							content: '';
+							width: 16px;
+							height: 16px;
+							position: absolute;
+							top: 2px;
+							left: 2px;
+							background-image: url(../img/colombia.png);
+							background-size: cover;
+							background-repeat: no-repeat;
+							border-radius: 50%;
+							box-shadow: 0px 5px 10px #00000033;
+							transition: 0.3s;
+						}
+					}
+
+					.navbar__toggle--language-input {
+						visibility: hidden;
+
+						&:checked + label {
+							&::after {
+								left: 40px;
+								transform: translateX(-100%);
+								background-image: url(../img/reino-unido.png);
+							}
+						}
+					}
+				}
 			}
 		}
 	}

@@ -374,8 +374,8 @@ html {
 }
 /* ============= Home ============= */
 .home {
-	background-image: url(../img/astro3.jpeg);
-	
+	/* background-color: var(--bg-color-section2); */
+	background: linear-gradient(to bottom, #dfdcdc, #041f4a);
 	/* background-color: var(--bg-color-section-home);	 */
 	
 	position: relative;
